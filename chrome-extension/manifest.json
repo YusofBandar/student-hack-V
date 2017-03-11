@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trump'O'Meter",
+  "description": "This extension shows how alike the language used in a selected piece of text is to the language that Prez. Donald Trump uses",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon128.png",
+    "default_popup": "popup.html",
+    "default_title": "Trump'O'Meter"
+  },
+  "permissions": [
+          "tabs",
+          "http://*/*", 
+          "https://*/*"
+      ],
+  "background" : {
+    "scripts" : ["popup.js"]
+    }
+}

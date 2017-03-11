@@ -1,0 +1,38 @@
+body, p, h1, h2, a, nav, ul, li, header, footer
+{		
+	margin:0;
+	padding:0;
+	list-style-type: none;
+    font-family: 'Verdana', sans-serif;
+}
+#title 
+{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #bc0000;
+    font-weight: bold;
+    text-align: center;
+}
+
+body 
+{
+    background-color: #2b325f;
+}
+
+p 
+{
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#social
+{
+    margin-top: 50px;
+}
+
+.twitter-timeline
+{
+    margin-left: 30px;
+}
