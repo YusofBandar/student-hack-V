@@ -3,14 +3,14 @@ body, p, h1, h2, a, nav, ul, li, header, footer
 	margin:0;
 	padding:0;
 	list-style-type: none;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 #title 
 {
-    background-color: white;
+    background-color: #bc0000;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #bc0000;
+    color: #FFFFFF;
     font-weight: bold;
     text-align: center;
 }
@@ -18,6 +18,7 @@ body, p, h1, h2, a, nav, ul, li, header, footer
 body 
 {
     background-color: #2b325f;
+    height: 50%;
 }
 
 p 
@@ -30,9 +31,86 @@ p
 #social
 {
     margin-top: 50px;
+    position: relative;
+    height: auto;
 }
 
 .twitter-timeline
 {
     margin-left: 30px;
+    margin-top:1px;
+    position: inherit;
+}
+
+.instagram-media
+{
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 3px;
+    border-color: red;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    margin: 100px;
+    max-width: 350px;
+    padding: 0;
+    width: 100%;
+    height: 449px;
+    position: relative;
+    top: -454px;
+    left: 425px;
+}
+.instagram-media a
+{
+    color: #c9c8cd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 17px;
+    text-decoration: none;
+    target="_blank";
+}
+
+#facebook-media
+{
+    position: relative;
+    top: -916px;
+    left: 800px;
+    background-color: #FFFFFF;
+}
+
+#output 
+{
+    border-radius:30px;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 100px;
+    max-height: 100px;
+    background-color:#FFFFFF;
+    border: 10px solid #c42020;
+    color:#000000;
+    font-family:'Montserrat';
+    font-weight:bold;
+    font-size: 30px;
+    position: absolute;
+    top: 600px;
+    left: 300px;
+    padding: 10px;
+}
+
+#trumpButton
+{
+    border-radius:30px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 100px;
+    background-color:#000286;
+    border: 10px solid #c42020;
+    color:#FFFFFF;
+    font-family:'Montserrat';
+    font-weight:bold;
+    font-size: 30px;
+    position: absolute;
+    top: 620px;
+    left: 1000px;
 }

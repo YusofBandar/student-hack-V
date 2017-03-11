@@ -1,7 +1,4 @@
-#myButton {
-	-moz-box-shadow: 0px 10px 14px -7px #ffffff;
-	-webkit-box-shadow: 0px 10px 14px -7px #ffffff;
-	box-shadow: 0px 10px 14px -7px #ffffff;
+#trumpButton {
 	background-color:#000286;
 	border:2px solid #c42020;
 	display:inline-block;
@@ -14,8 +11,9 @@
 	text-decoration:none;
     position: absolute;
     left: 40px;
+    top:10px;
 }
-#myButton:hover {
+#trumpButton:hover {
 	background-color:#304294;
 }
 
@@ -23,24 +21,21 @@
     min-width: 226px;
     max-width: 226px;
     min-height: 100px;
+    max-height: 100px;
     background-color:#000286;
     border: 2px solid #c42020;
     color:#ffffff;
     font-family:Verdana;
     font-weight:bold;
     position: absolute;
-    top: 70px;
+    top: 72px;
     left: 40px;
 }
 
-#myButton2 {
-	-moz-box-shadow: 0px 10px 14px -7px #ffffff;
-	-webkit-box-shadow: 0px 10px 14px -7px #ffffff;
-	box-shadow: 0px 10px 14px -7px #ffffff;
+#scoreButton{
 	background-color:#000286;
 	border:2px solid #c42020;
 	display:inline-block;
-	cursor:pointer;
 	color:#ffffff;
 	font-family:Verdana;
 	font-size:28px;
@@ -52,7 +47,97 @@
     left: 40px;
     width: 233px;
 }
-#myButton:hover {
-	background-color:#304294;
+
+
+
+#twitterButton {
+	background-color:#4099ff;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 14px;
+    position: absolute;
+    top: 250px;
+    left: 60px;
 }
+#twitterButton:hover {
+	background-color:#c41c1c;
+}
+
+#facebookButton{
+	background-color:#3b5898;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:14px;
+	font-weight:bold;
+	padding:9px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    top: 250px;
+    left: 110px;
+}
+#facebookButton:hover {
+	background-color: #c41c1c;
+}
+
+#instaButton {
+	background-color:#fb3958;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    top: 250px;
+    left: 160px;
+}
+#instaButton:hover {
+	background-color:#3b5898;
+}
+
+#webButton {
+	background-color:#125688;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:14px;
+	font-weight:bold;
+	padding:9px 11px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    top: 250px;
+    left: 210px;
+}
+#webButton:hover {
+	background-color:#c41c1c;
+}
+
+
+
+        
+        
         

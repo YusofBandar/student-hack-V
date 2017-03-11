@@ -3,21 +3,74 @@
 <head>
     <meta charset="utf-8">
     <link rel="icon" href="images/icon128.png" type="image/png"/>
-    <title>The Official Trump'O'Meter</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="twitter.js"></script>
-    <script src="facebook.js"></script>
-    <script src="instagram.js"></script>
+    <title>The Official Trump'O'Meter</title>
 </head>
 <body>
     <h1 id="title">Welcome to the site of the Official Trump'O'Meter</h1>
-    <p id = "intro">Check out what Donald Trump is up to on Twitter, Facebook and Instagram<br><br>
-    And check how Trump-Like you are</p>
+    <div id = "social">
+        <a class="twitter-timeline" data-width="375" data-height="449" href="https://twitter.com/realDonaldTrump">Tweets by @realDonaldTrump</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" ><div> <div> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BReySgOgKYM/">#USA 🇺🇸</a></p></div></blockquote>
+        <script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
     
-    <div id = "social"></div>
-        <a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/realDonaldTrump">Tweets by realDonaldTrump</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
-        <script type="text/javascript" src="instafeed.min.js"></script>
+        <iframe id="facebook-media" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Famericafirstpol%2Fvideos%2F266110257178551%2F&show_text=1&width=560" width="540" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     </div>
+    
+    <div id = "classifier">
+         <textarea id="output" placeholder="Make America Great Again"></textarea>
+        <button id="trumpButton">TRUMP</button>
+    </div>
+    <script>  
+    var text;
+    var score=2;
+    var trumpButton=document.getElementById("trumpButton");
+
+    trumpButton.addEventListener("click", analyseText);
+
+    function analyseText()
+    {          
+        text  = document.getElementById("output").value;
+        if(trumpButton.innerHTML == "TRUMP")
+        {
+            trumpButton.innerHTML = score + "/10";
+        }
+        else
+        {
+            trumpButton.innerHTML = "TRUMP"
+        }
+        sounds();
+    }
+
+    function sounds()
+    {
+        if(score<=1)
+        {
+            var audio = new Audio('speech/donaldTrump0-1.mp3');
+            audio.play();
+        }
+        else if(score<=3)
+        {
+            var audio = new Audio('speech/donaldTrump2-3.mp3');
+            audio.play();
+        }
+        else if(score<=5)
+        {
+            var audio = new Audio('speech/donaldTrump4-5.mp3');
+            audio.play();
+        }
+        else if(score<=7)
+        {
+            var audio = new Audio('speech/donaldTrump6-7.mp3');
+            audio.play();
+        }
+        else
+        {
+            var audio = new Audio('speech/donaldTrump8.mp3');
+            audio.play();
+        }
+    }
+    </script>
 </body>
 </html>
