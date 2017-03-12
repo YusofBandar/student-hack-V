@@ -16,7 +16,7 @@ training = []
 output = []
 stemmer = LancasterStemmer();
 
-with open('trump_tweets.csv') as csvfile:
+with open('all_tweets.csv', encoding = 'ISO-8859-1') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         if(row[0] != '' and row[1] != ''):
@@ -106,10 +106,10 @@ def train(X, y, hidden_neurons=10, alpha=1, epochs=50000, dropout=False, dropout
         if (j% 10000) == 0 and j > 5000:
             # if this 10k iteration's error is greater than the last iteration, break out
             if np.mean(np.abs(layer_2_error)) < last_mean_error:
-                #print ("delta after "+str(j)+" iterations:" + str(np.mean(np.abs(layer_2_error))) )
+                print ("delta after "+str(j)+" iterations:" + str(np.mean(np.abs(layer_2_error))) )
                 last_mean_error = np.mean(np.abs(layer_2_error))
             else:
-                #print ("break:", np.mean(np.abs(layer_2_error)), ">", last_mean_error )
+                print ("break:", np.mean(np.abs(layer_2_error)), ">", last_mean_error )
                 break
                 
         # in what direction is the target value?
@@ -155,7 +155,7 @@ y = np.array(output)
 
 start_time = time.time()
 
-train(X, y, hidden_neurons=20, alpha=0.1, epochs=100000, dropout=False, dropout_percent=0.2)
+train(X, y, hidden_neurons=20, alpha=0.01, epochs=200000, dropout=False, dropout_percent=0.2)
 
 elapsed_time = time.time() - start_time
 print ("processing time:", elapsed_time, "seconds")

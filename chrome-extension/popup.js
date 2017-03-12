@@ -19,7 +19,7 @@ webbutton.addEventListener("click",website);
 
 function website()
 {
-    var win = window.open("https://www.instagram.com/realdonaldtrump/?hl=en", '_blank');
+    var win = window.open("http://b23ce867.ngrok.io/static/desktop/index.html", '_blank');
     win.focus();
 }
 
@@ -57,7 +57,7 @@ function analyseText()
     text = text.split(" ").join("%20");
     
     var HTTPreq = new XMLHttpRequest(); 
-    HTTPreq.open("GET","http://75048472.ngrok.io/?sentence=" + text,false);
+    HTTPreq.open("GET","http://b23ce867.ngrok.io/?sentence=" + text,false);
     HTTPreq.send();
     var response = HTTPreq.responseText;
     console.log(response);

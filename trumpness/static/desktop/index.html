@@ -24,7 +24,7 @@
     </div>
     <script>  
     var text;
-    var score=2;
+    var score='';
     var trumpButton=document.getElementById("trumpButton");
 
     trumpButton.addEventListener("click", analyseText);
@@ -32,6 +32,16 @@
     function analyseText()
     {          
         text  = document.getElementById("output").value;
+        text = text.split(" ").join("%20");
+        
+        var HTTPreq = new XMLHttpRequest(); 
+        HTTPreq.open("GET","http://b23ce867.ngrok.io/?sentence=" + text,false);
+        HTTPreq.send();
+        var response = HTTPreq.responseText;
+        console.log(response);
+        var object = JSON.parse(response);
+        score = object.result;
+
         if(trumpButton.innerHTML == "TRUMP")
         {
             trumpButton.innerHTML = score + "/10";
