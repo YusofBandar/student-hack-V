@@ -9,4 +9,12 @@ It uses:
 - Youtube to mp3 converter to fetch Trump's voice;
 - Twillio API to send and receive messages;
 
+##### Donald Trump's tweets result:
+![Image of Trump's tweets](https://github.com/SimeonKostadinoff/student-hack-V/blob/master/Tweets/DonaldTrump.JPG)
+##### Hillary Clinton's tweets result:
+![Image of Hillary's tweets](https://github.com/SimeonKostadinoff/student-hack-V/blob/master/Tweets/HillaryClinton.JPG)
+##### Mike Pence's tweets result:
+![Image of Pence's tweets](https://github.com/SimeonKostadinoff/student-hack-V/blob/master/Tweets/MikePence.JPG)
+
+
 Authors: Simeon Kostadinov (University of Birmingham), Pritam Sangani and Pritam Sangani (Manchester Metropolitan University).  
