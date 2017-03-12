@@ -49,8 +49,6 @@ img1.onload = function () {
     }
     
 
-
-
 function analyseText()
 {
     text  = document.getElementById("output").value;

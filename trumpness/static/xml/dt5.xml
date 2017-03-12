@@ -1,0 +1,4 @@
+<Response>
+    <Say voice="alice">Hello to Trump O'meter</Say>
+    <Play>http://b23ce867.ngrok.io/static/speech/dt5.mp3</Play>
+</Response>
