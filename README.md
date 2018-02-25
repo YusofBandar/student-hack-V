@@ -17,4 +17,4 @@ It uses:
 ![Image of Pence's tweets](https://github.com/SimeonKostadinoff/student-hack-V/blob/master/Tweets/MikePence.JPG)
 
 
-Authors: Simeon Kostadinov (University of Birmingham), Pritam Sangani and Pritam Sangani (Manchester Metropolitan University).  
+Authors: Simeon Kostadinov (University of Birmingham), Yusof Bandar and Pritam Sangani (Manchester Metropolitan University).  
